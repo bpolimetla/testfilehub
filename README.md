@@ -30,3 +30,22 @@ This command creates:
 - Perfect for speed testing
 
 ---
+
+## Why Not Use Image Files?
+
+### How to generate a 10MB image file?
+
+**First:** Images are NOT ideal for speed testing.
+
+**Reasons:**
+
+- JPEG/PNG compress heavily
+- File size changes depending on content
+- Browser may optimize/cached decode
+- Some servers apply compression automatically
+
+**Recommendation:**
+
+For speed tests, use binary `.bin` or random data files instead of images.
+
+---
